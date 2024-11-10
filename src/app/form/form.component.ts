@@ -2,6 +2,7 @@ import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HeaderComponent } from "../header/header.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -9,16 +10,15 @@ import { HeaderComponent } from "../header/header.component";
   imports: [
     ReactiveFormsModule,
     NgIf,
-    HeaderComponent
+    HeaderComponent,
+    RouterModule
 ],
 
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })
 export class FormComponent {
-onSubmit() {
-throw new Error('Method not implemented.');
-}
+
   public form!: FormGroup;
 
   constructor(private fb:FormBuilder){
@@ -29,5 +29,9 @@ throw new Error('Method not implemented.');
       description: ['', Validators.required]
     })
   }
+
+  onSubmit() {
+    throw new Error('Method not implemented.');
+    }
 
 }

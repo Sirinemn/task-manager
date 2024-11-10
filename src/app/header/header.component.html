@@ -1,12 +1,11 @@
 <nav class="nav"> 
     <div class="home">
-        <a routerLink="" >Home</a>
+        <a [routerLink]="['/']" >Home</a>
     </div>  
     <div class="formulaire">
-        <a routerLink="form" >Formulaire</a>
+        <a [routerLink]="['/form']" >Formulaire</a>
     </div>
-    <div class="detail">
-        <a routerLink="tips" >Conseil</a>
+    <div class="tips">
+        <a [routerLink]="['/tips']" >Conseil</a>
     </div>
-
 </nav>

@@ -9,9 +9,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 export const routes: Routes = [
     { path: "", component: HomeComponent},
     { path: "tips", component: TipsComponent},
-    { path: "detail/:id", component: DetailComponent },
     { path: "form", component: FormComponent},
     { path: "image", component: ImageComponent},
+    { path: "detail/:id", component: DetailComponent },
     { path: '404',component: NotFoundComponent },
     { path: '**',redirectTo: '404' }
 ];

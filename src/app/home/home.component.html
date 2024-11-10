@@ -6,7 +6,7 @@
         <th> Titre</th> <th> Prioroté </th> <th> Accompli</th> <th> Détail</th>
     </tr>
     <tr *ngFor="let task of task$ | async">
-        <td> {{ task.title}}</td>
+        <td> {{task.title}}</td>
         <td [ngClass]="{'prioritaire': task.prioritaire}"> {{ task.prioritaire}}</td>
         <td><input type="checkbox" id="accompli" [(ngModel)]="task.accompli" disabled/>
             <label for="scales">Accompli</label></td>
