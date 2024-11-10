@@ -12,5 +12,19 @@
       <li>Prévoir du temps pour les imprévus.</li>
       <li>Lister les microtâches par ordre d'importance et d'urgence (utiliser la matrice d'Eisenhower par exemple).</li>
     </ul>
+    <button (click)="moreTips()">More tips</button>
   </div>
+<div *ngIf="more" class="aditional-tips">
+  <h2> Les principes de base pour s’organiser au quotidien</h2>
+  <p>Il existe quelques principes de base concernant l’organisation des individus. 
+    Il s’agit tout d’abord de désencombrer. En d’autres termes, il s’agit de supprimer ou de se défaire de ce qui est inutile. 
+    Ensuite, il s’agira de gérer son planning et de hiérarchiser ses priorités. Enfin de tenir compte de l’anticipation dans l’organisation.
+  </p>
+  <ul>
+    <li>Gérer son planning et hiérarchiser ses priorités</li>
+    <li> L’importance de l’anticipation</li>
+    <li> La clarification des objectifs pour s’organiser au quotidien </li>
+  </ul>
+  <button (click)="lessTips()">Less tips</button>
+</div>
   

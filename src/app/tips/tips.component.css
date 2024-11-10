@@ -1,4 +1,4 @@
-.tips-container {
+.tips-container , .aditional-tips{
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -28,4 +28,12 @@
     margin-bottom: 10px;
     font-size: 16px;
   }
-  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
