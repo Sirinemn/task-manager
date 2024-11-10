@@ -1,2 +1,12 @@
-<app-detail></app-detail>
-<p>detail works!</p>
+<app-header></app-header>
+<div class="task-detail-container" *ngIf="task">
+    <h2>Détails de la Tâche</h2>
+    <div class="task-info">
+      <p><strong>Titre:</strong> {{ task.title }}</p>
+      <p><strong>Priorité:</strong> {{ task.prioritaire ? 'Oui' : 'Non' }}</p>
+      <p><strong>Accompli:</strong> {{ task.accompli ? 'Oui' : 'Non' }}</p>
+      <p><strong>Description:</strong> {{ task.description }}</p>
+    </div>
+    <button routerLink="/">Retour à la liste</button>
+  </div>
+  

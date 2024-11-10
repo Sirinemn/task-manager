@@ -18,8 +18,8 @@ export class TaskServiceService {
     this.tasksSubject.next([...cuurrentTAsks, task]);
   }
 
-  getTaskById(id: number){
-    this.tasksSubject.value.find( task => task.id === id);
+  getTaskById(id: number): Task{
+    return this.tasksSubject.value.find( task => task.id === id)!;
   }
 
 }

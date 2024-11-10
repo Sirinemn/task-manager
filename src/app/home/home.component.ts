@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit{
   }
 
   view(id: number) {
-    this.router.navigate([`detail/${id}`]);
+    this.router.navigate([`/detail/${id}`]);
   }
 
 }
