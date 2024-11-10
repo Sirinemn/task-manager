@@ -1,14 +1,16 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-form',
   standalone: true,
   imports: [
     ReactiveFormsModule,
-    NgIf
-  ],
+    NgIf,
+    HeaderComponent
+],
 
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
