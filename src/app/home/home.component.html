@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<table >
+    <caption> Liste des Taches </caption >
+    <tr>
+        <th> Titre</th> <th> Prioroté </th> <th> Accompli</th> <th> Détail</th>
+    </tr>
+    <tr *ngFor="let task of task$ | async">
+        <td> {{ task.title}}</td>
+        <td [ngClass]="{'prioritaire': task.prioritaire}"> {{ task.prioritaire}}</td>
+        <td><input type="checkbox" id="accompli" [(ngModel)]="task.accompli" disabled/>
+            <label for="scales">Accompli</label></td>
+        <td> <button (Click)="view(task.id)"> Consulter </button></td>
+    </tr>
+</table>
+
+<div>
+    <button routerLink="form"> Ajouter une tache </button>
+</div>
