@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
 import { TaskServiceService } from '../service/task-service.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Task } from '../interface/Task.interface';
 import { NgIf } from '@angular/common';
 
@@ -9,7 +9,8 @@ import { NgIf } from '@angular/common';
   selector: 'app-detail',
   standalone: true,
   imports: [HeaderComponent,
-    NgIf 
+    NgIf,
+    RouterModule
   ],
   templateUrl: './detail.component.html',
   styleUrl: './detail.component.css'
