@@ -17,4 +17,4 @@ Ce projet est une application de gestion de tâches développée avec Angular. E
 ## Installation
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
-   git clone https://github.com/votre-utilisateur/gestion-taches-angular.git
+   git clone https://github.com/Sirinemn/task-manager.git
